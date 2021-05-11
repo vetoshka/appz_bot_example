@@ -10,8 +10,8 @@ pipeline {
         stage('Build') { 
             
             steps {
-               
-               sh' mvn clean install org.codehaus.mojo:exec-maven-plugin:1.1.1:java -Dexec.mainClass="kpi.acts.appz.bot.hellobot.HelloWorldBot " -e'
+                sh 'mvn clean install'
+                sh 'mvn -X exec:java -Dexec.mainClass=kpi.acts.appz.bot.hellobot.HelloWorldBot -Dexec.args="1650435543:AAEbfZYv-rwcbYQqa3ZUPpOv-mr1NHNJ_pw frog"'
             }
         }
     }
