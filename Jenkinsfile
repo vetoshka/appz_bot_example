@@ -11,7 +11,7 @@ pipeline {
             
             steps {
                
-                sh 'mvn package docker:build'
+                sh 'mvn package'
                 sh 'mvn -X exec:java -Dexec.mainClass="kpi.acts.appz.bot.hellobot.HelloWorldBot" -Dexec.args="1650435543:AAEbfZYv-rwcbYQqa3ZUPpOv-mr1NHNJ_pw frog"'
             }
         }
