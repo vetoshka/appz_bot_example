@@ -6,7 +6,7 @@
     <artifactId>parent</artifactId>
     <version>2019.1</version>
     <name>parent</name>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <modules>
         <module>telegram_bot</module>
