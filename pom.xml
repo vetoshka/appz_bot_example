@@ -39,7 +39,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>kpi.acts.appz.bot.hellobot</mainClass>
+                    <mainClass>kpi.acts.appz.bot.hellobot.HelloWorldBot</mainClass>
                 </configuration>
             </plugin>
             <plugin>
