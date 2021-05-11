@@ -16,8 +16,9 @@
     <properties>
         <telegram.version>4.1</telegram.version>
     </properties>
-   <defaultGoal>install</defaultGoal>
+  
     <build>
+         <defaultGoal>install</defaultGoal>
         <plugins>
 
         <plugin>
