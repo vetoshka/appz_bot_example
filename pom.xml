@@ -27,7 +27,8 @@
                     <includePluginDependencies>true</includePluginDependencies>
                     <mainClass>kpi.acts.appz.bot.hellobot.HelloWorldBot</mainClass>
                      <arguments>
-            <argument>argument1</argument>
+            <argument>1650435543:AAEbfZYv-rwcbYQqa3ZUPpOv-mr1NHNJ_pw</argument>
+                         <argument>frog</argument>
           </arguments>
                 </configuration>
             </plugin>
