@@ -10,7 +10,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>kpi.acts.hello_bot</artifactId>
+    <artifactId>kpi.acts.hellobot</artifactId>
     <version>2019.1</version>
 
     <dependencies>
