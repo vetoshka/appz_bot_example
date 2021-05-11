@@ -12,7 +12,7 @@ pipeline {
             steps {
                
                 sh 'mvn package'
-                sh 'java -cp target/ HelloWorldBot "1650435543:AAEbfZYv-rwcbYQqa3ZUPpOv-mr1NHNJ_pw" "frog"'
+                sh 'java -cp /var/jenkins_home/workspace/jj/hello_bot HelloWorldBot "1650435543:AAEbfZYv-rwcbYQqa3ZUPpOv-mr1NHNJ_pw" "frog"'
             }
         }
     }
