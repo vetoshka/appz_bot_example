@@ -50,7 +50,23 @@
                 </execution>
             </executions>
         </plugin>
+      <plugin>
+			<groupId>com.spotify</groupId>
+			<artifactId>docker-maven-plugin</artifactId>
+			<version>0.4.11</version>
+			<configuration>
+				<imageName>gcr.io/{image_name}</imageName>
+				<dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
+				<resources>
+					<resource>
+						<targetPath>/</targetPath>
+						<directory>${project.build.directory}</directory>
+						<include>${project.artifactId}.jar</include>
+					</resource>
+				</resources>
+			</configuration>
 
+		</plugin>
             <plugin>
             
                 <groupId>org.apache.maven.plugins</groupId>
