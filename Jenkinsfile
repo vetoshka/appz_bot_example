@@ -6,11 +6,7 @@ pipeline {
         }
     }
     stages {
-        stage('git') {
-            steps {
-                git clone "https://github.com/vetoshka/appz_bot_example.git"
-            }
-        }
+   
         stage('Build') { 
             
             steps {
