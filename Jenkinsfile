@@ -7,6 +7,11 @@ pipeline {
     }
     stages {
         stage('Build') { 
+            stage('git') {
+            steps {
+                git url: "https://github.com/KotyaraSingleCat/appz_bot_example.git"
+            }
+        }
             steps {
                 sh 'mvn clean package'
                 sh 'mvn -X exec:java -Dexec.mainClass=kpi.acts.appz.bot.hellobot.HelloWorldBot -Dexec.args="1650435543:AAEbfZYv-rwcbYQqa3ZUPpOv-mr1NHNJ_pw frog"'
