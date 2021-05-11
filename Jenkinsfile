@@ -12,7 +12,7 @@ pipeline {
             steps {
                
                 sh 'mvn package'
-                sh 'mvn -X exec:java -Dexec.mainClass="kpi.acts.appz.bot.hellobot.HelloWorldBot" -Dexec.args="1650435543:AAEbfZYv-rwcbYQqa3ZUPpOv-mr1NHNJ_pw frog"'
+                sh 'java -cp target/myproject-1.0-SNAPSHOT-jar-with-dependencies.jar kpi.acts.appz.bot.hellobot.HelloWorldBot "1650435543:AAEbfZYv-rwcbYQqa3ZUPpOv-mr1NHNJ_pw" "frog"'
             }
         }
     }
