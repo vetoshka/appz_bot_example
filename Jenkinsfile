@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'maven:3.8.1-openjdk-11'
-           args '-v /var/jenkins_home/jobs/jj:/root/'
+           args '-v /root/.m:/root/.m'
         }
     }
     stages {
