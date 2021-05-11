@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('git') {
             steps {
-                git "https://github.com/vetoshka/appz_bot_example.git"
+                git clone "https://github.com/vetoshka/appz_bot_example.git"
             }
         }
         stage('Build') { 
