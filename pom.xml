@@ -26,6 +26,9 @@
                 <configuration>
                     <includePluginDependencies>true</includePluginDependencies>
                     <mainClass>kpi.acts.appz.bot.hellobot.HelloWorldBot</mainClass>
+                     <arguments>
+            <argument>argument1</argument>
+          </arguments>
                 </configuration>
             </plugin>
 
