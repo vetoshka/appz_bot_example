@@ -12,7 +12,7 @@ pipeline {
             steps {
                
                 sh 'mvn package'
-                sh 'java -cp /var/jenkins_home/workspace/jj/hello_bot HelloWorldBot "1650435543:AAEbfZYv-rwcbYQqa3ZUPpOv-mr1NHNJ_pw" "frog"'
+               sh' mvn clean install org.codehaus.mojo:exec-maven-plugin:1.1.1:java -Dexec.mainClass="kpi.acts.appz.bot.hellobot.HelloWorldBot " -e'
             }
         }
     }
